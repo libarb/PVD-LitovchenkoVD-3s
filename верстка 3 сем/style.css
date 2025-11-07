@@ -1,0 +1,55 @@
+
+:root {
+    --dg-color: #627425;
+    --mg-color: #989C30;
+    --lg-color: #ADAE56;
+    --accent-color: #cc9f60; 
+    --dark-color: #2A170E;
+    --light-color: #F9F6F2;
+}
+@font-face {
+    font-family: 'BEBAS';
+    src: url(fonts/OFONT.RU_BEBAS\ NEUE.TTF);
+}
+@font-face {
+    font-family: 'OKUDA';
+    src: url(fonts/OFONT.RU_OKUDA.TTF);
+}
+
+body {
+   
+    font-family: 'BEBAS', 'OKUDA';
+    background-color: var(--light-color);
+    color: var(--dg-color);
+    text-transform: uppercase;
+}
+
+.navbar {
+    background-color: var(--light-color) !important;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.nav-link {
+    color: var(--dg-color) !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: var(--lg-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--dg-color);
+    border: none;
+    border-radius: 50px;
+}
+
+.btn-primary:hover {
+    background-color: #6A7A36;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}

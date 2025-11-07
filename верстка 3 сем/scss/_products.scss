@@ -1,0 +1,26 @@
+/* scss/_products.scss */
+
+.products-section {
+    .product-item {
+        transition: transform 0.3s ease;
+        &.hidden {
+            display: none;
+        }
+    }
+
+    .card {
+        border-radius: 0.5rem;
+        transition: box-shadow 0.3s ease;
+        &:hover {
+            box-shadow: 0 0.5rem 1rem rgba($dark, 0.15) !important;
+        }
+    }
+
+    .category-filters a:hover {
+        background-color: lighten($primary, 20%);
+    }
+
+    .product-filters button {
+        border-radius: 50px;
+    }
+}

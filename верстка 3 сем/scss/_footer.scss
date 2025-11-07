@@ -1,0 +1,10 @@
+/* scss/_footer.scss */
+
+.footer-section {
+    a {
+        text-decoration: none;
+        &:hover {
+            color: $primary !important;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+/* scss/_header.scss */
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    border-bottom: 1px solid #eee;
+    // Бургер-меню для мобильной версии (md breakpoint и меньше)
+    .navbar-toggler {
+        display: block; // Показываем на md и меньше
+        @include media-breakpoint-up(lg) {
+            display: none; // Скрываем на lg и выше, если используем navbar-expand-lg
+        }
+    }
+}
+
+.nav-link {
+    color: $dark !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    &:hover {
+        color: $primary !important;
+    }
+}

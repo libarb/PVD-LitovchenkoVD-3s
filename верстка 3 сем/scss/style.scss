@@ -1,0 +1,70 @@
+/* scss/style.scss */
+
+// 1. Import Bootstrap's Functions and Variables
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Custom Variables
+@import "variables"; 
+
+// 3. Import Bootstrap's rest
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// 4. Custom Component Styles
+@import "header";
+@import "hero";
+@import "products";
+@import "masterclasses";
+@import "subscriptions";
+@import "farms";
+@import "qna";
+@import "registration";
+@import "footer";
+
+// 5. Global/Utility Overrides
+body {
+    font-family: sans-serif; // Placeholder, use the font from the original design
+    padding-top: 70px; // Offset for fixed navbar
+}
+
+.btn-primary {
+    background-color: $primary !important;
+    border-color: $primary !important;
+    &:hover {
+        background-color: $light-green !important;
+        border-color: $light-green !important;
+    }
+}
+
+.btn-secondary {
+    background-color: $light-green !important;
+    border-color: $light-green !important;
+    &:hover {
+        background-color: $secondary !important;
+        border-color: $secondary !important;
+    }
+}
+
+.text-primary {
+    color: $primary !important;
+}
+
+.text-secondary {
+    color: $light-green !important;
+}
+
+.text-dark {
+    color: $dark !important;
+}
+
+.list-group-item.active {
+    background-color: $primary !important;
+    border-color: $primary !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: $dark;
+    background-color: lighten($primary, 30%);
+    box-shadow: none;
+}

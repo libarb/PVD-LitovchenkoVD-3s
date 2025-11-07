@@ -1,0 +1,23 @@
+/* scss/_hero.scss */
+
+.hero-section {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('placeholder-hero-bg.jpg'); // Замените на реальное изображение из макета
+    background-size: cover;
+    background-position: center;
+    background-color: $dark; // Цвет на случай, если изображение не загрузится
+    
+    h1 {
+        font-weight: 300;
+        span {
+            font-weight: 700;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
