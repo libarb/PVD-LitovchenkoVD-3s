@@ -1,9 +1,9 @@
-$dg:   #627425; // Акцентный зеленый
-$mg:       #ADAE56; // Основной зеленый
-$lg:     #989C30; // Дополнительный зеленый
-$accent:    #cc9f60;
-$dark:          #2A170E; // Темный
-$light:         #F9F6F2;
+$dg:#627425; // Акцентный зеленый
+$mg:#ADAE56; // Основной зеленый
+$lg:#989C30; // Дополнительный зеленый
+$accent:#cc9f60;
+$dark:#2A170E; // Темный
+$light:#F9F6F2; // ФонЫ
 
 $theme-colors: (
     "dg": $dg,
@@ -26,3 +26,17 @@ $container-max-widths: (
   lg: 960px,
   xl: 1320px 
 );
+@font-face{
+  font-family: 'OKUDA';
+  src: url(fonts/OKUDA.TTF);
+  font-weight: 400 
+}
+
+@font-face{
+  font-family: 'BEBAS';
+  src: url(fonts/BEBAS.TTF);
+  font-weight: 700 
+}
+
+$font-main: 'BEBAS';
+$font-secondary: 'OKUDA';

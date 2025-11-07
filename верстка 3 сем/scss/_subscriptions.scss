@@ -1,5 +1,22 @@
-.subscriptions-section {
+#subscriptions {
+    background-color: $light;
+    padding: 5rem 0;
+    text-align: center;
+
     .card {
-        border-radius: 1rem;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s;
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+    .btn {
+        background-color: $accent;
+        color: $light;
+        font-weight: 600;
+        border-radius: 50px;
+        &:hover { background-color: $dg; }
     }
 }

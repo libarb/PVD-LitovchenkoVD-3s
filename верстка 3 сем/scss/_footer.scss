@@ -1,8 +1,23 @@
-.footer-section {
+footer {
+    background-color: $dark;
+    color: $light;
+    padding: 2rem 0;
+
     a {
+        color: $light;
         text-decoration: none;
+        transition: color 0.3s;
         &:hover {
-            color: $primary !important;
+            color: $mg;
+        }
+    }
+
+    .btn-outline-light {
+        border-color: $mg;
+        color: $light;
+        &:hover {
+            background-color: $mg;
+            color: $dark;
         }
     }
 }

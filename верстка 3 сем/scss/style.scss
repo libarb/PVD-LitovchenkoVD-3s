@@ -1,64 +1,11 @@
-@import "../node_modules/bootstrap/scss/functions";
-
-@import "variables"; 
-
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
-
-@import "header";
-@import "hero";
-@import "products";
-@import "masterclasses";
-@import "subscriptions";
-@import "farms";
-@import "qna";
-@import "registration";
-@import "footer";
-
-body {
-    font-family: 'OKUDA';
-    src: url(fonts/OKUDA.TTF);
-    padding-top: 70px; 
-}
-
-.btn-primary {
-    background-color: $light !important;
-    border-color: $lg !important;
-    &:hover {
-        background-color: $light !important;
-        border-color: $lg !important;
-    }
-}
-
-.btn-secondary {
-    background-color: $lg !important;
-    border-color: $mg !important;
-    &:hover {
-        background-color: $light !important;
-        border-color: $mg !important;
-    }
-}
-
-.text-primary {
-    color: $dg !important;
-}
-
-.text-secondary {
-    color: $lg !important;
-}
-
-.text-dark {
-    color: $dark !important;
-}
-
-.list-group-item.active {
-    background-color: $light !important;
-    border-color: $mg !important;
-}
-
-.accordion-button:not(.collapsed) {
-    color: $dark;
-    background-color: lighten($lg, 30%);
-    box-shadow: none;
-}
+@import 'variables';
+@import 'global';
+@import 'header';
+@import 'hero';
+@import 'products';
+@import 'masterclasses';
+@import 'subscriptions';
+@import 'farms';
+@import 'qna';
+@import 'registration';
+@import 'footer';
