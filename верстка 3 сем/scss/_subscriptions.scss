@@ -4,7 +4,6 @@
     text-align: center;
 
     .card {
-        border-radius: 15px;
         overflow: hidden;
         transition: transform 0.3s;
         &:hover {
@@ -16,7 +15,6 @@
         background-color: $accent;
         color: $light;
         font-weight: 600;
-        border-radius: 50px;
         &:hover { background-color: $dg; }
     }
 }
