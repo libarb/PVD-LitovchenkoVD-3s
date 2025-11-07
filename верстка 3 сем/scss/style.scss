@@ -1,15 +1,11 @@
-// 1. Import Bootstrap's Functions and Variables
 @import "../node_modules/bootstrap/scss/functions";
 
-// 2. Custom Variables
 @import "variables"; 
 
-// 3. Import Bootstrap's rest
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
 
-// 4. Custom Component Styles
 @import "header";
 @import "hero";
 @import "products";
@@ -20,36 +16,36 @@
 @import "registration";
 @import "footer";
 
-// 5. Global/Utility Overrides
 body {
-    font-family: sans-serif; // Placeholder, use the font from the original design
-    padding-top: 70px; // Offset for fixed navbar
+    font-family: 'OKUDA';
+    src: url(fonts/OKUDA.TTF);
+    padding-top: 70px; 
 }
 
 .btn-primary {
-    background-color: $primary !important;
-    border-color: $primary !important;
+    background-color: $light !important;
+    border-color: $lg !important;
     &:hover {
-        background-color: $light-green !important;
-        border-color: $light-green !important;
+        background-color: $light !important;
+        border-color: $lg !important;
     }
 }
 
 .btn-secondary {
-    background-color: $light-green !important;
-    border-color: $light-green !important;
+    background-color: $lg !important;
+    border-color: $mg !important;
     &:hover {
-        background-color: $secondary !important;
-        border-color: $secondary !important;
+        background-color: $light !important;
+        border-color: $mg !important;
     }
 }
 
 .text-primary {
-    color: $primary !important;
+    color: $dg !important;
 }
 
 .text-secondary {
-    color: $light-green !important;
+    color: $lg !important;
 }
 
 .text-dark {
@@ -57,12 +53,12 @@ body {
 }
 
 .list-group-item.active {
-    background-color: $primary !important;
-    border-color: $primary !important;
+    background-color: $light !important;
+    border-color: $mg !important;
 }
 
 .accordion-button:not(.collapsed) {
     color: $dark;
-    background-color: lighten($primary, 30%);
+    background-color: lighten($lg, 30%);
     box-shadow: none;
 }

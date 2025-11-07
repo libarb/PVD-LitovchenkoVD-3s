@@ -1,23 +1,20 @@
-$primary:       #ADAE56; // Основной зеленый
-$secondary:     #989C30; // Дополнительный зеленый
-$light-green:   #627425; // Акцентный зеленый
+$dg:   #627425; // Акцентный зеленый
+$mg:       #ADAE56; // Основной зеленый
+$lg:     #989C30; // Дополнительный зеленый
+$accent:    #cc9f60;
 $dark:          #2A170E; // Темный
-$white:         #FFFFFF;
-$text-muted:    #707070;
+$light:         #F9F6F2;
 
-// Override Bootstrap default colors
 $theme-colors: (
-    "primary": $primary,
-    "secondary": $secondary,
-    "success": $light-green,
+    "dg": $dg,
+    "mg": $mg,
+    "lg": $lg,
     "dark": $dark,
-    "light": #f8f9fa
+    "light": $light
 );
-
-// Custom breakpoints as requested: 1440px, 1024px, 768px, 375px
 $grid-breakpoints: (
   xs: 0,
-  sm: 376px, // Near 375px
+  sm: 376px, 
   md: 768px,
   lg: 1024px,
   xl: 1440px
@@ -27,5 +24,5 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1320px // Using 1320px for a better container-xl visual
+  xl: 1320px 
 );

@@ -3,21 +3,20 @@
 }
 
 .navbar {
-    border-bottom: 1px solid #eee;
-    // Бургер-меню для мобильной версии (md breakpoint и меньше)
+    border-bottom: 0.5px solid;
     .navbar-toggler {
-        display: block; // Показываем на md и меньше
+        display: block;
         @include media-breakpoint-up(lg) {
-            display: none; // Скрываем на lg и выше, если используем navbar-expand-lg
+            display: none; 
         }
     }
 }
 
 .nav-link {
-    color: $dark !important;
+    color: $dg !important;
     font-weight: 500;
     margin: 0 0.5rem;
     &:hover {
-        color: $primary !important;
+        color: $dg !important;
     }
 }
