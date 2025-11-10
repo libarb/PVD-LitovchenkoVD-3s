@@ -27,6 +27,13 @@
         }
     }
 
+    .category-filters .list-group-item.active {
+        background-color: $dg;
+        color: $light;
+        border: none;
+    }
+
+
     .card {
         border: none;
         transition: transform 0.3s, box-shadow 0.3s;
